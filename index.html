@@ -2,9 +2,216 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Arrigo - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lekton" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-UG0/Z15SBpvyW/Ax3JVUAyYfFpNoyJsd3Xc33cCUfX7J9XX7Jf8BggKwhVLjyxAqql+wQ0DZrLEm/wWeJab9+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-UG0/Z15SBpvyW/Ax3JVUAyYfFpNoyJsd3Xc33cCUfX7J9XX7Jf8BggKwhVLjyxAqql+wQ0DZrLEm/wWeJab9+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Nobile', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://nicolearrigo.github.io/background.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .navigation {
+            padding: 10px 0; /* Add some vertical padding */
+            text-align: center; /* Center the links */
+        }
+        .navigation ul {
+            list-style-type: none; /* Remove bullets from the list */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .navigation ul li {
+            display: inline-block; /* Display list items horizontally */
+            margin: 0 10px; /* Add some horizontal spacing between links */
+        }
+        .navigation ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: #333; /* Set link color */
+            display: inline-block; /* Make links fill their container */
+            padding: 10px 20px; /* Add padding to create boxes around links */
+            border: 1px solid #6c7a97;  /* Add border to create boxes around links */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+        .strip {
+            background-color: rgba(230, 240, 255, 0.9); /* Light blue background with transparency */
+            width: 80%; /* Set width of the strip */
+            max-width: 1200px; /* Maximum width of the strip */
+            margin: 0 auto; /* Center the strip horizontally */
+            padding: 50px 20px; /* Add padding to the strip */
+            text-align: center; /* Center content within the strip */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .container-narrow {
+            max-width: 100%;
+            padding: 20px;
+            align-items: center; /* Center vertically */
+            text-align: center;
+            background-color: rgba(230, 240, 255, 0.1); /* Light blue background with transparency */
+        }
+        h1, h2 {
+            text-shadow: 1px 1px 1px #ccc;
+            font-family: 'Molengo', Georgia, Times, serif;
+            font-size: 56px;
+            line-height: 80px;
+            text-align: center; /* Center headings */
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .contact-info {
+            display: flex; /* Use flexbox to arrange items in a row */
+            justify-content: space-evenly; /* Evenly distribute items along the row */
+            align-items: center; /* Center items vertically */
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: #333;
+            display: flex; /* Use flexbox for icons and text alignment */
+            align-items: center; /* Align items vertically */
+        }
+        .contact-info a i {
+            margin-right: 5px; /* Add some spacing between icon and text */
+        }
+        .separator {
+            height: 20px; /* Set height of separator */
+            border-left: 1px solid #999; /* Add vertical line */
+            margin: 0 10px; /* Add spacing around the separator */
+        }
+        /* Adjust image size */
+        img {
+            max-width: 100%; /* Ensure image scales down if it exceeds container width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove extra space beneath image */
+            margin: 0 auto; /* Center the image horizontally */
+            width: 200px; /* Set a specific width for the image */
+        }
+        .small_img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            width: 150px; /* Adjust image width */
+            margin-bottom: 10px;
+        }
+        .image-caption {
+            font-size: 10px; /* Adjust caption font size */
+        }
+        .image-row {
+            display: flex; /* Use flexbox to arrange items in a row */
+            justify-content: center; /* Center items horizontally */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+        }
+        .image-column {
+            flex: 0 0 calc(20% - 10px);
+            margin: 5px; /* Add spacing between images */
+            text-align: center; /* Center image and caption horizontally */
+        }
+    </style>
 </head>
 <body>
+    <div class="background-image"></div>
+     <div class="strip">
+        <div class="container">
+    <header>
+        <div class="container-narrow">
+            <h1><img src="https://nicolearrigo.github.io/headshot.JPG" alt="Nicole Arrigo"> Nicole Arrigo</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#motivation">Motivation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! My name is Nicole Arrigo. I am a graduate student at North Carolina
+                    State University, pursuing a Masters in Civil Engineering with a concentration
+                    in Coastal Engineering. I am driven by my passion and dedication to sustainability
+                    and resilience. Currently, I am contributing my efforts to the Coastal & Computational
+                    Hydraulics research team, striving for innovative solutions for the challenges confronting
+                    coastal communities.
 
+                    I was born in Jacksonville, Florida and grew up in Saint Augustine.</p>
+            </div>
+        </section>
+        <section id="research">
+            <div class="container">
+                <h2>Research</h2>
+                <p>My research contributes to the NCSU Coastal & Computational Hydraulics
+                    Research Team.
+                    My current work focuses on modernizing a spectral wave model within
+                    a coupled modeling framework. </p>
+            </div>
+        </section>
+        <section id="motivation">
+            <div class="container">
+                <h2>My Motivation</h2>
+                <p>Coastal engineering is important to me because... the coast will
+                    always hold a special place in my heart...</p>
+                <div class="image-row">
+                <div class="image-column">
+                    <img src="https://nicolearrigo.github.io/image1.JPG" alt="Image 1">
+                    <p class="image-caption">Caption for Image 1</p>
+                </div>
+                <div class="image-column">
+                    <img src="https://nicolearrigo.github.io/image2.JPG" alt="Image 2">
+                    <p class="image-caption">Caption for Image 2</p>
+                </div>
+                <div class="image-column">
+                    <img src="https://nicolearrigo.github.io/image3.JPG" alt="Image 3">
+                    <p class="image-caption">Caption for Image 3</p>
+                </div>
+                <div class="image-column">
+                    <img src="https://nicolearrigo.github.io/image4.JPG" alt="Image 4">
+                    <p class="image-caption">Caption for Image 4</p>
+                </div>
+                <div class="image-column">
+                    <img src="https://nicolearrigo.github.io/image5.JPG" alt="Image 5">
+                    <p class="image-caption">Caption for Image 5</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <a href="https://www.linkedin.com/in/nicole-arrigo-59578a137/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <span class="separator"></span> <!-- Vertical line separator -->
+                    <a href="tel:1234567890">
+                        <i class="fas fa-phone"></i> 904-540-7457
+                    </a>
+                    <span class="separator"></span> <!-- Vertical line separator -->
+                    <a href="mailto:example@example.com">
+                        <i class="far fa-envelope"></i> nkarrigo@ncsu.edu
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nicole Arrigo. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
